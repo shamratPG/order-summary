@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    /* ### Primary */
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    font-family: 'Red Hat Display', sans-serif;
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-pale-blue);
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 320px;
+    background-color: var(--very-pale-blue);
+    border-radius: 25px;
+    box-shadow: 0 10px 16px -5px grey;
+}
+
+.container .image-area img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+}
+
+.container .text-area {
+    padding: 0 30px;
+}
+
+.container .text-area .header h1 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px 0 20px 0;
+
+}
+
+.container .text-area .main-text p {
+    font-size: 16px;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.container .text-area .annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.container .text-area .annual-plan .plan-area {
+    display: flex;
+    gap: 20px;
+}
+
+.container .text-area .annual-plan .plan-area img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.container .text-area .annual-plan .plan-area .plan-text h2 {
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.container .text-area .annual-plan .plan-area .plan-text p {
+    font-size: 16px;
+    color: var(--desaturated-blue);
+}
+
+.container .text-area .annual-plan a {
+    font-weight: 700;
+}
+
+.container .text-area .annual-plan a:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+.container .button-area button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bright-blue);
+    font-weight: 700;
+    color: var(--very-pale-blue);
+    margin-bottom: 30px;
+    font-size: 16px;
+    box-shadow: 0 3px 8px -2px black;
+}
+
+.container .button-area button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.container .button-area a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+}
+
+.container .button-area a:hover {
+    color: var(--dark-blue);
+}
+
+@media(max-width:375px) {
+    body {
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
